@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <title>Relógio</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+
+    <body>
+
+        <header>
+            <figure>
+                <img class="clock" src="clock.png">
+            </figure>
+        </header>
+
+        <h1>
+        <script type="text/javascript">
+
+            function autoRefresh() {
+            window.location = window.location.href;}
+            setInterval('autoRefresh()', 1000);
+
+            const zeroFill = n => {
+                return ('0' + n).slice(-2);
+            }
+
+            var semana = new Array ("domingo", "segunda-feira","terça-feira","quarta-feira","quinta-feira","sexta-feira","sábado")
+            var mes = new Array ("janeiro","fevereiro","março","abril","maio","junho","julho","agosto","setembro","outubro","novembro","dezembro")
+            var data = new Date
+            document.write("Hoje é "+ semana[data.getDay()] + ", " +data.getDate() + " de " + mes[data.getMonth()] + " de " +data.getFullYear()+" às " + zeroFill(data.getHours()) +":" + zeroFill(data.getMinutes()) +":" + zeroFill(data.getSeconds())); 
+
+
+        </script>
+    </h1>
+    </body>
+</html>
