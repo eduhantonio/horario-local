@@ -17,14 +17,15 @@
         <h1>
         <script type="text/javascript">
 
-            function autoRefresh() {
-            window.location = window.location.href;}
+            function autoRefresh() { //Atualização automática da base de dados (Data e Hora)
+            window.location = window.location.href;} // Identificar a data e o dia 
             setInterval('autoRefresh()', 1000);
 
             const zeroFill = n => {
                 return ('0' + n).slice(-2);
             }
 
+            // Base de Dados de "Dia" e Mês
             var semana = new Array ("domingo", "segunda-feira","terça-feira","quarta-feira","quinta-feira","sexta-feira","sábado")
             var mes = new Array ("janeiro","fevereiro","março","abril","maio","junho","julho","agosto","setembro","outubro","novembro","dezembro")
             var data = new Date
